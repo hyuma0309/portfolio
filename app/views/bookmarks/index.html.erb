@@ -1,0 +1,30 @@
+<% if current_user.movies.present? %>
+  <% current_user.movies.each do |movie| %>
+      <br>
+      <div><%= movie.title %></div>
+      <br>
+      <div><%= image_tag 'https://image.tmdb.org/t/p/w500'+movie.poster_path.to_s %></div>　　　　　
+      <br>
+      <div><%= movie.overview %></div>
+      <br>
+      <div><%= movie.release_date %></div>
+      <br>
+      
+ 
+    <% if movie.vod_info.vod_services.size > 0 %>
+      <% services = "" %>
+      <% movie.vod_info.vod_services.each do |service| %>
+　　    <% services = services + "[#{service.name}]" %>
+      <% end %>
+      <p><%= services %></p>
+    <% else %>
+      <p>無料で配信しているvodはありません</p>
+    <% end %>
+     <%= form_tag('/bookmarks', :method => :delete) do %>
+        <%= hidden_field_tag 'movie_id', movie.id %>
+        <%= submit_tag 'お気に入り解除' %>
+        <% end %>
+  <% end %>
+  
+   
+<% end %>

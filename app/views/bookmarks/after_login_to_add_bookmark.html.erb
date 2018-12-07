@@ -1,0 +1,12 @@
+<html>
+<head>
+<title></title>
+</head>
+<body onLoad="document.forms[0].submit()">
+<% if @back_controller && @back_action && @params %>
+  <%= form_tag({:controller => @back_controller, :action => @back_action}, {:method => :post}) do %>
+    <%= hidden_field_tag 'movie_id', @params["movie_id"] %>
+  <% end %>
+<% end %>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  post_path: MyString
+  overview: MyText
+  release_date: 2018-11-06
+
+two:
+  title: MyString
+  post_path: MyString
+  overview: MyText
+  release_date: 2018-11-06

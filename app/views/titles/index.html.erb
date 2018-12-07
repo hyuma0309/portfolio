@@ -1,0 +1,83 @@
+
+  <h1>Hulu, U-NEXT,dtv,GYAO!,Amazonprime,Netflixの中から配信中のvodを見つけられます！</h1>
+
+  <%= form_tag({action: :index}, {method: :get}) do %>
+    <br>
+    <%= label_tag :name, '作品名' %> 
+    <%= text_field_tag :name, @name %>
+
+    <%= submit_tag '検索', data: { disable_with: '送信中'} %>    ※作品名がヒットしない場合、英語入力も試してみてください
+  <% end %>
+
+
+
+<% if @movies.present? %>
+  <% @movies.each do |movie| %>
+      <br>
+      <div><%= movie.title %></div>
+      <br>
+      <div><%= image_tag 'https://image.tmdb.org/t/p/w500'+movie.poster_path.to_s %></div>　　　　　
+      <br>
+      <div><%= movie.overview %></div>
+      <br>
+      <div><%= movie.release_date %></div>
+      <br>
+      
+      <% if user_signed_in? %>
+      <% unless movie.bookmarks.find_by(user_id: current_user.id).nil?  %>
+      <%= form_tag('/bookmarks', :method => :delete) do %>
+        <%= hidden_field_tag 'movie_id', movie.id %>
+        <%= submit_tag 'お気に入り解除' %>
+        <% end %>
+      <% else %>
+      <%= form_tag('/bookmarks', :method => :post) do %>
+        <%= hidden_field_tag 'movie_id', movie.id %>
+        <%= submit_tag 'お気に入りに追加' %>
+     <% end %>
+    <% end %>
+
+    <% else %>
+    <%= form_tag('/bookmarks', :method => :post) do %>
+        <%= hidden_field_tag 'movie_id', movie.id %>
+        <%= submit_tag 'お気に入りに追加' %>
+      <% end %>
+      <% end %>
+
+     
+   
+ 
+ <% if movie.vod_info.vod_services.size > 0 %>
+      <% services = "" %>
+      <% movie.vod_info.vod_services.each do |service| %>
+      
+　<% if service.name == 'Hulu' %>
+  <%= link_to service.name, 'https://px.a8.net/svt/ejp?a8mat=2ZLP1F+FAPZCI+3TXU+62MDE' %>
+  
+  <% elsif service.name == 'U-NEXT' %>
+  <%= link_to service.name, 'https://px.a8.net/svt/ejp?a8mat=2ZLP1F+F467OY+3250+6K736' %>
+  
+  <% elsif service.name == 'dTV' %>
+  <%= link_to service.name, 'https://px.a8.net/svt/ejp?a8mat=2ZNAZO+9OW19U+2YOA+6SCAQ' %>
+  
+  <% elsif service.name == 'GYAO' %>
+  <%= link_to service.name, 'https://gyao.yahoo.co.jp/' %>
+  
+  <% elsif service.name == 'Amazon Prime Video' %>
+  <%= link_to service.name, 'https://www.amazon.co.jp/gp/video/storefront?benefitId=default&tag=okaset-22' %>
+  
+  <% elsif service.name == 'Netflix' %>
+  <%= link_to service.name, 'https://www.netflix.com/jp/' %>
+      <% end %>
+      
+      
+  <% end %>
+      
+        
+      
+    <% else %>
+      <p>無料で配信しているvodはありません</p>
+    <% end %>
+  <% end %>
+<% end %>
+
+
