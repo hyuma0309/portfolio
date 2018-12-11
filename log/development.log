@@ -5501,3 +5501,451 @@ Processing by BookmarksController#index as HTML
 Completed 200 OK in 62ms (Views: 57.8ms | ActiveRecord: 2.2ms)
 
 
+Started GET "/" for 58.189.191.114 at 2018-12-11 13:02:34 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Processing by TitlesController#index as HTML
+  Rendering titles/index.html.erb within layouts/application
+  Rendered titles/index.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+Completed 200 OK in 346ms (Views: 334.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 58.189.191.114 at 2018-12-11 13:02:35 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TitlesController#index as HTML
+  Rendering titles/index.html.erb within layouts/application
+  Rendered titles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/titles?utf8=%E2%9C%93&name=%E3%83%89%E3%83%A9%E3%81%88%E3%82%82%E3%82%93&commit=%E6%A4%9C%E7%B4%A2" for 58.189.191.114 at 2018-12-11 13:02:39 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TitlesController#index as HTML
+  Parameters: {"utf8"=>"✓", "name"=>"ドラえもん", "commit"=>"検索"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "STAND BY ME ドラえもん"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の宝島"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の宇宙開拓史"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太と翼の勇者たち"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん 新・のび太の日本誕生"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の大魔境"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の南極カチコチ大冒険"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太とロボット王国"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太とブリキの迷宮（ラビリンス）"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太のパラレル西遊記"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の恐竜"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の宇宙小戦争"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の宇宙英雄記（スペースヒーローズ）"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の人魚大海戦"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の宇宙漂流記"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の創世日記"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の恐竜2006"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太と雲の王国"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太と鉄人兵団"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん 新・のび太の宇宙開拓史"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "ドラえもん"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "STAND BY ME ドラえもん"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mVodInfo Load (1.0ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."title" = ? LIMIT ?[0m  [["title", "STAND BY ME ドラえもん"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太と翼の勇者たち"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mVodInfo Load (0.2ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太と翼の勇者たち"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の宇宙漂流記"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mVodInfo Load (0.2ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の宇宙漂流記"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太と竜の騎士"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mVodInfo Load (0.2ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太と竜の騎士"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の創世日記"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mVodInfo Load (0.2ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の創世日記"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:23
+  [1m[35m (53.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の宇宙開拓史"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mVodInfo Load (0.2ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の宇宙開拓史"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太のワンニャン時空伝"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mVodInfo Load (0.2ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太のワンニャン時空伝"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太と夢幻三剣士"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太とブリキの迷宮"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太とアニマル惑星"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太と鉄人兵団"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mVodInfo Load (0.2ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太と鉄人兵団"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "ばらかもん"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の宇宙小戦争"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mVodInfo Load (1.3ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の宇宙小戦争"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "ティガームービー／プーさんの贈りもの"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "もやしもん"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "ドロロンえん魔くん"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "映画ドラえもん のび太の日本誕生"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "Heaven Knows What"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "Jen Kirkman: Just Keep Livin'?"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "Fun Size"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "Louis C.K.: Hilarious"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "Yamla Pagla Deewana"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "マゴリアムおじさんの不思議なおもちゃ屋"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "He's Just Not That Into You"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "残穢（ざんえ） -住んではいけない部屋‐"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "みんなのいえ"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "アイヒマンを追え！ ナチスがもっとも畏れた男"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "ファイナルライフ－明日、君が消えても－"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "なくもんか"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  Rendering titles/index.html.erb within layouts/application
+  [1m[36mVodInfo Load (0.7ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 23], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 21]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 24], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 69], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 39]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.2ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 36], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 23]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 34], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 39], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 25], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.2ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 71], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 35], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 28], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 26], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 72], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 42]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 32], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 66], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 38], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 24]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 68], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 40]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 29], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 27], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 67], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 41]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 42], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  Rendered titles/index.html.erb within layouts/application (50.8ms)
+Completed 200 OK in 6198ms (Views: 65.7ms | ActiveRecord: 72.5ms)
+
+
+Started POST "/bookmarks" for 58.189.191.114 at 2018-12-11 13:02:50 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookmarksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"csvcXMAwy4IJv9eLLhdCJ9PSDfs015pIPQvS1JySiolCV703xX4GqJcgw6o33o/tSslNFpPM5t2+6iltj9I1fA==", "movie_id"=>"23", "commit"=>"お気に入りに追加"}
+Redirected to https://8067f4079cf8473abcfc13e14648fc79.vfs.cloud9.us-east-2.amazonaws.com/users/sign_in
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 58.189.191.114 at 2018-12-11 13:02:50 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 58.189.191.114 at 2018-12-11 13:03:00 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t1PXGnAWRrNktQFyVkCKboztcDhPR6KSBG9Dk0k5S/WHz7ZxdViLmfoqFVNPiUekFfYw1ehc3geHjrgqWnn0AA==", "user"=>{"email"=>"sunanoeikan0309@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sunanoeikan0309@gmail.com"], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", "2018-12-11 13:03:00.631098"], ["updated_at", "2018-12-11 13:03:00.632746"], ["id", 1]]
+  ↳ /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Redirected to https://8067f4079cf8473abcfc13e14648fc79.vfs.cloud9.us-east-2.amazonaws.com/after_login_to_add_bookmark
+Completed 302 Found in 201ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/after_login_to_add_bookmark" for 58.189.191.114 at 2018-12-11 13:03:00 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookmarksController#after_login_to_add_bookmark as HTML
+  Rendering bookmarks/after_login_to_add_bookmark.html.erb
+  Rendered bookmarks/after_login_to_add_bookmark.html.erb (1.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bookmarks" for 58.189.191.114 at 2018-12-11 13:03:01 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookmarksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8UxKUumY8F6ncCNa3jjlma4yhLE3AbbHtw92vuEKA+0v6qKj0O3E2FUpsjy8ZBN4lUep7CyGuk/cwmJ6Z+7VHw==", "movie_id"=>"23"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:10
+  [1m[36mBookmark Load (1.0ms)[0m  [1m[34mSELECT  "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."movie_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["movie_id", 23], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:12
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:15
+Redirected to https://8067f4079cf8473abcfc13e14648fc79.vfs.cloud9.us-east-2.amazonaws.com/after_login_to_add_bookmark
+Completed 302 Found in 19ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/after_login_to_add_bookmark" for 58.189.191.114 at 2018-12-11 13:03:01 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookmarksController#after_login_to_add_bookmark as HTML
+Redirected to https://8067f4079cf8473abcfc13e14648fc79.vfs.cloud9.us-east-2.amazonaws.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.189.191.114 at 2018-12-11 13:03:01 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TitlesController#index as HTML
+  Rendering titles/index.html.erb within layouts/application
+  Rendered titles/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bookmarks" for 58.189.191.114 at 2018-12-11 13:03:04 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookmarksController#index as HTML
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:1
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "bookmarks" ON "movies"."id" = "bookmarks"."movie_id" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:1
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 4], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:14
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 2]]
+  ↳ app/views/bookmarks/index.html.erb:14
+  [1m[36mVodService Load (0.7ms)[0m  [1m[34mSELECT "vod_services".* FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 2]]
+  ↳ app/views/bookmarks/index.html.erb:16
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 23], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:14
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 21]]
+  ↳ app/views/bookmarks/index.html.erb:14
+  Rendered bookmarks/index.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 59ms (Views: 55.1ms | ActiveRecord: 2.2ms)
+
+
+Started DELETE "/users/sign_out" for 58.189.191.114 at 2018-12-11 13:03:19 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9sWLPihQYlk875cC3Y6qnNL3Uub/9ewO3XgM5phEKs82zPx2PCUqobfOXyEnvnzmMLK1+gxwDsILWe9TY/zUMw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", nil], ["updated_at", "2018-12-11 13:03:19.022746"], ["id", 1]]
+  ↳ /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Redirected to https://8067f4079cf8473abcfc13e14648fc79.vfs.cloud9.us-east-2.amazonaws.com/
+Completed 302 Found in 13ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/" for 58.189.191.114 at 2018-12-11 13:03:19 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TitlesController#index as HTML
+  Rendering titles/index.html.erb within layouts/application
+  Rendered titles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 58.189.191.114 at 2018-12-11 13:03:20 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
