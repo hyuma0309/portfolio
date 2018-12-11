@@ -66,4 +66,6 @@ gem 'devise'
 gem 'themoviedb-api'
 gem 'kaminari'
 gem 'pry-byebug'
-gem 'pg', '0.21.0'
+group :production do
+  gem 'pg', '0.21.0'
+end

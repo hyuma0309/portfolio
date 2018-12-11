@@ -5949,3 +5949,98 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 58.189.191.114 at 2018-12-11 13:28:44 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Processing by TitlesController#index as HTML
+  Rendering titles/index.html.erb within layouts/application
+  Rendered titles/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 220ms (Views: 210.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.189.191.114 at 2018-12-11 13:28:45 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TitlesController#index as HTML
+  Rendering titles/index.html.erb within layouts/application
+  Rendered titles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/titles?utf8=%E2%9C%93&name=%E3%82%AB%E3%82%A4%E3%82%B8&commit=%E6%A4%9C%E7%B4%A2" for 58.189.191.114 at 2018-12-11 13:28:50 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TitlesController#index as HTML
+  Parameters: {"utf8"=>"✓", "name"=>"カイジ", "commit"=>"検索"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "カイジ　人生逆転ゲーム"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "カイジ2 人生奪回ゲーム"], ["LIMIT", 1]]
+  ↳ app/models/movie.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/movie.rb:37
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "カイジ　人生逆転ゲーム"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."title" = ? LIMIT ?[0m  [["title", "カイジ　人生逆転ゲーム"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[36mVodService Load (0.1ms)[0m  [1m[34mSELECT  "vod_services".* FROM "vod_services" WHERE "vod_services"."name" = ? AND "vod_services"."vod_info_id" = ? LIMIT ?[0m  [["name", "Hulu"], ["vod_info_id", 33], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/vod_info.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/vod_info.rb:34
+  [1m[36mVodService Load (0.2ms)[0m  [1m[34mSELECT  "vod_services".* FROM "vod_services" WHERE "vod_services"."name" = ? AND "vod_services"."vod_info_id" = ? LIMIT ?[0m  [["name", "U-NEXT"], ["vod_info_id", 33], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/vod_info.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/vod_info.rb:34
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "カイジ2 人生奪回ゲーム"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mVodInfo Load (0.2ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."title" = ? LIMIT ?[0m  [["title", "カイジ2 人生奪回ゲーム"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/vod_info.rb:26
+  [1m[36mVodService Load (0.2ms)[0m  [1m[34mSELECT  "vod_services".* FROM "vod_services" WHERE "vod_services"."name" = ? AND "vod_services"."vod_info_id" = ? LIMIT ?[0m  [["name", "Hulu"], ["vod_info_id", 32], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/vod_info.rb:34
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/vod_info.rb:34
+  [1m[36mVodService Load (0.2ms)[0m  [1m[34mSELECT  "vod_services".* FROM "vod_services" WHERE "vod_services"."name" = ? AND "vod_services"."vod_info_id" = ? LIMIT ?[0m  [["name", "U-NEXT"], ["vod_info_id", 32], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/vod_info.rb:34
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/vod_info.rb:34
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "Animal World"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "逆境無頼カイジ"], ["LIMIT", 1]]
+  ↳ app/models/vod_info.rb:21
+  Rendering titles/index.html.erb within layouts/application
+  [1m[36mVodInfo Load (0.2ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 51], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 33]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodService Load (0.1ms)[0m  [1m[34mSELECT "vod_services".* FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 33]]
+  ↳ app/views/titles/index.html.erb:50
+  [1m[36mVodInfo Load (0.1ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 50], ["LIMIT", 1]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 32]]
+  ↳ app/views/titles/index.html.erb:49
+  [1m[36mVodService Load (0.1ms)[0m  [1m[34mSELECT "vod_services".* FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 32]]
+  ↳ app/views/titles/index.html.erb:50
+  Rendered titles/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 7452ms (Views: 35.6ms | ActiveRecord: 5.4ms)
+
+
