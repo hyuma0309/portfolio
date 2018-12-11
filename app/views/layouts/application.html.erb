@@ -14,7 +14,7 @@
   <p class="alert"><%= alert %></p>
 
   <% if user_signed_in? %>
-    ログインユーザー： <%= current_user.email %>
+    ログインユーザー： <%= current_user.name %>
     <%= link_to "TOP画面", root_path %>
     <%= link_to 'お気に入り', '/bookmarks' %>
     <%= link_to 'アカウント変更', edit_user_registration_path %>

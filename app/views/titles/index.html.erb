@@ -46,8 +46,7 @@
      
    
  
- <% if movie.vod_info.vod_services.size > 0 %>
-      <% services = "" %>
+ <% if !movie.vod_info.nil? and movie.vod_info.vod_services.size > 0 %>
       <% movie.vod_info.vod_services.each do |service| %>
       
 　<% if service.name == 'Hulu' %>
@@ -67,13 +66,9 @@
   
   <% elsif service.name == 'Netflix' %>
   <%= link_to service.name, 'https://www.netflix.com/jp/' %>
-      <% end %>
-      
-      
+  <% end %>    
   <% end %>
-      
-        
-      
+  
     <% else %>
       <p>無料で配信しているvodはありません</p>
     <% end %>
