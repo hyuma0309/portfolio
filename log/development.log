@@ -6044,3 +6044,29 @@ Processing by TitlesController#index as HTML
 Completed 200 OK in 7452ms (Views: 35.6ms | ActiveRecord: 5.4ms)
 
 
+Started GET "/" for 58.189.191.114 at 2018-12-11 13:42:10 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/gems/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Processing by TitlesController#index as HTML
+  Rendering titles/index.html.erb within layouts/application
+  Rendered titles/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 229ms (Views: 218.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.189.191.114 at 2018-12-11 13:42:11 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TitlesController#index as HTML
+  Rendering titles/index.html.erb within layouts/application
+  Rendered titles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.189.191.114 at 2018-12-11 13:42:11 +0000
+Cannot render console from 58.189.191.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TitlesController#index as HTML
+  Rendering titles/index.html.erb within layouts/application
+  Rendered titles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
