@@ -70,3 +70,4 @@ gem 'devise'
 gem 'themoviedb-api'
 gem 'kaminari'
 gem 'pry-byebug'
+
