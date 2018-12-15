@@ -68,3 +68,4 @@ gem 'devise'
 gem 'themoviedb-api'
 gem 'kaminari'
 gem 'pry-byebug'
+gem 'rails_12factor', group: :production
