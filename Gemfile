@@ -9,7 +9,7 @@ gem 'rails', '~> 5.2.1'
 group :test, :development do
   gem 'sqlite3'
 end  
-group :production
+group :production do
   gem 'pg' 
   gem 'rails_12factor'
 end
