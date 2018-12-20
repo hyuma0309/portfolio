@@ -15,12 +15,11 @@
 
   <% if user_signed_in? %>
     ログインユーザー： <%= current_user.name %>
-    <%= link_to "TOP画面", root_path %>
+    <%= link_to "検索画面", root_path %>
     <%= link_to 'お気に入り', '/bookmarks' %>
-    <%= link_to 'アカウント変更', edit_user_registration_path %>
     <%= link_to "ログアウト", destroy_user_session_path,method: :delete %>
   <% else %>
-    <%= link_to "TOP画面", root_path %>
+    <%= link_to "検索画面", root_path %>
     <%= link_to "新規作成", new_user_registration_path %>
     <%= link_to "ログイン", new_user_session_path %>
   <% end %>
