@@ -11,12 +11,29 @@
       <br>
       
  
-    <% if movie.vod_info.vod_services.size > 0 %>
-      <% services = "" %>
+    <% if !movie.vod_info.nil? and movie.vod_info.vod_services.size > 0 %>
       <% movie.vod_info.vod_services.each do |service| %>
-　　    <% services = services + "[#{service.name}]" %>
-      <% end %>
-      <p><%= services %></p>
+      
+　<% if service.name == 'Hulu' %>
+  <%= link_to service.name, 'https://px.a8.net/svt/ejp?a8mat=2ZLP1F+FAPZCI+3TXU+62MDE' %>
+  
+  <% elsif service.name == 'U-NEXT' %>
+  <%= link_to service.name, 'https://px.a8.net/svt/ejp?a8mat=2ZLP1F+F467OY+3250+6K736' %>
+  
+  <% elsif service.name == 'dTV' %>
+  <%= link_to service.name, 'https://px.a8.net/svt/ejp?a8mat=2ZNAZO+9OW19U+2YOA+6SCAQ' %>
+  
+  <% elsif service.name == 'GYAO' %>
+  <%= link_to service.name, 'https://gyao.yahoo.co.jp/' %>
+  
+  <% elsif service.name == 'Amazon Prime Video' %>
+  <%= link_to service.name, 'https://www.amazon.co.jp/gp/video/storefront?benefitId=default&tag=okaset-22' %>
+  
+  <% elsif service.name == 'Netflix' %>
+  <%= link_to service.name, 'https://www.netflix.com/jp/' %>
+  <% end %>    
+  <% end %>
+  
     <% else %>
       <p>無料で配信しているvodはありません</p>
     <% end %>
