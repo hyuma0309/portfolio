@@ -10805,3 +10805,39 @@ Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
 >>>>>>> 78b2dd1e42d2aa3808a722584a412462ce76e959
 
 
+Started GET "/" for 127.0.0.1 at 2018-12-20 19:42:48 +0900
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by TitlesController#index as HTML
+  Rendering titles/index.html.erb within layouts/application
+  Rendered titles/index.html.erb within layouts/application (6.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+Completed 200 OK in 1216ms (Views: 1167.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/bookmarks" for 127.0.0.1 at 2018-12-20 19:42:52 +0900
+Processing by BookmarksController#index as HTML
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:1
+  [1m[36mMovie Load (1.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "bookmarks" ON "movies"."id" = "bookmarks"."movie_id" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:1
+  [1m[36mVodInfo Load (0.7ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 23], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:14
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 21]]
+  ↳ app/views/bookmarks/index.html.erb:14
+  [1m[36mVodInfo Load (0.2ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 5], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:14
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 16]]
+  ↳ app/views/bookmarks/index.html.erb:14
+  [1m[36mVodInfo Load (0.6ms)[0m  [1m[34mSELECT  "vod_infos".* FROM "vod_infos" WHERE "vod_infos"."movie_id" = ? LIMIT ?[0m  [["movie_id", 75], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:14
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 47]]
+  ↳ app/views/bookmarks/index.html.erb:14
+  [1m[36mVodService Load (0.5ms)[0m  [1m[34mSELECT "vod_services".* FROM "vod_services" WHERE "vod_services"."vod_info_id" = ?[0m  [["vod_info_id", 47]]
+  ↳ app/views/bookmarks/index.html.erb:15
+  Rendered bookmarks/index.html.erb within layouts/application (141.4ms)
+Completed 200 OK in 200ms (Views: 189.1ms | ActiveRecord: 7.3ms)
+
+
