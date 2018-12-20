@@ -37,6 +37,7 @@
     <% else %>
       <p>無料で配信しているvodはありません</p>
     <% end %>
+
      <%= form_tag('/bookmarks', :method => :delete) do %>
         <%= hidden_field_tag 'movie_id', movie.id %>
         <%= submit_tag 'お気に入り解除' %>
