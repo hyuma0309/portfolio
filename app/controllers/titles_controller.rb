@@ -6,20 +6,15 @@ class TitlesController < ApplicationController
   # GET /titles.json
   def index
     @name = params[:name]
-
     if !@name.nil?
       @movies =  Movie.search_and_get(@name)
     end
   end
 
-  def detail
-    @movie = Movie.find(params[:id])
-  end
 
   # GET /titles/1
   # GET /titles/1.json
   def show
-    
   end
 
   # GET /titles/new
