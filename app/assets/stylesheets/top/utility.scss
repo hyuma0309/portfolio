@@ -1,0 +1,13 @@
+.clearfix:after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.wrap{
+  width: 1200px;
+      box-sizing: border-box;
+      margin: 0 auto;
+}
+
+.button{}

@@ -1,0 +1,28 @@
+header {
+  border-bottom: 1px solid #efefef;
+}
+
+#logo {
+  float: left;
+    font-size: 24px;
+}
+
+#logo a {
+  text-decoration: none;
+  color: black;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: Montserrat, sans-serif;
+}
+
+.list {
+  float: right;
+      margin-top: 24px;
+}
+
+.list-item {
+  list-style: none;
+  float: left;
+  margin-left: 5px;
+
+}

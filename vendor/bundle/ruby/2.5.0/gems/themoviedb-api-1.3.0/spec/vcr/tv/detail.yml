@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/tv/1396?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=28800
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 09 Feb 2016 15:17:18 GMT
+      Etag:
+      - W/"95aa319fd30afa2efd635e8b354f55a8"
+      Server:
+      - openresty
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '24270'
+      X-Memc-Expires:
+      - '4530'
+      X-Memc-Key:
+      - 784bb2de3776b09b09db0c8e57046b8b
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '29'
+      X-Ratelimit-Reset:
+      - '1455031046'
+      Content-Length:
+      - '1180'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA31VW3PaOhD+Kxq/nBdDfMEY8haaBtJcW3LrdDqMbK9tgS25
+        kowhnfz3s3JcmgTOeYCxtav9vm9v/m1FNF4lUlSLiurcOraOYP5cbcfD02ZS
+        L6dnS2dzFT1N4mmcbp76yyqzbCuWQDUki2hrHf/4bbHEOh4Oh75vW5yWgDEe
+        GI+BTFlRsIxyvFFJkbICdhjycn6/lKEXwLMbX4Tzi4fNp3Gd3Dj+9xbj5adt
+        QcWUSGAha77QzMT9MQjsQYimlEmlF5TJRYJEMKDnOKOe4/bcMYJlwCWoHTV3
+        tON1KmlJ2+C5KKGimTnMta6Oj46apunTMtbrfizKI5WLRh1FKHTFeNaLaIKB
+        22j+eIhPfIGSkjrWTHDrOKWFAtsqKM9qDGqwLTC6E8A/KfAPD5E3tX4at4/k
+        Xb/njHueId8xnXTIZNIic9CNkKs3osLBzvfk6lOriddlBHIh0kWXOnQfem/P
+        FVAlOB4HtiUky1BGLGqupSmkdT837F7PabH4owYRWi07w2GKYg1yzaD5YCFM
+        EcrJSQmSxfgQSywlSUwhiIYC1kxhColCMyjSdRbeSMhrgvEl2pL3DdUnc9Dv
+        fRhCFFH9qwaJP5tcQ0OuYMNiYZOPdHQORGkht0Sk5JEWGiR5zJnGaxQNss6y
+        wrjnLMuJinMhChLnUDK0bZE0xRdJmlyYYAmjGRcKKTRM58hDVCBpVAApaoyB
+        kmN0prpFjQAzyE1sRG5ptLL7ZAZE15IjN4EcCpaC8WhzZXcizS0jWUHRsitB
+        57SsctC0ZBzdMAVCJgiGMRTEtQRUoEiK5mL7Dz5g8XjMaEHSWhtrBKkwTlgO
+        JGEbZaWJ3ApprwqJZcOU1AlwbZMvoBSQW8ZXpSnCDOgaQ7ciaMGeIbHfiDLJ
+        WXHRcBOGVEIxMysmPtNY6JxKGmPmleGtAAwyxkIlG206xWQwFpIbDyM7pwoJ
+        AycFjbBtsEXQzDWUlZAUy9KAwmjcNEsb3zSSkH2ze0RVF1QyjU3uDvqOOx6H
+        gTk2F3Ybyd3Cwxex8eVSeMvJhZQsP79ahrWYj7ut93fgcWjKinLWLZluHqYS
+        2/uBUXK7czQzb6bVGzrBi73znAu+xTTGpgqK3O2m4M+KcZ3Qf+M+M304kSzJ
+        gHxGyVJTxkusSOfv++HAMwtgN95I6v1yHPccr+eGZg91W7Wde9wPXYggDPdS
+        csKz6/o+eprHrLnk9086uZnMflX55lp2KXkFXLwuGOvYMaT/ayt/AA53wN4e
+        sAhc37292azHm7PCbyZlkjnfH+Px+fPgMLC7D4yKcamO9oFdf4fs7yGHZ81p
+        eF5vZ9vhpnBHl6fn3zbLIlyfRuIwsreH7DoG2XP/F3m//9L0dvR1BI0zGH0X
+        6ewbP3u4ckcTL72dHkZuO+Q9sttzwoNVfoM83EMOoJH8ohrcReJ+kN9d3gXx
+        440fOOVseRh5sI/stcjBAeS/DTbaQ5b+c+isa85yebJanl9+vXicPTlTb/N8
+        cxg5aLtcU11jk1ufeQLmy6O3VTtVuC4r3Z6shYYFxQ9S+/ka9YPuqCM1GIxf
+        /gWkAn2a+QgAAA==
+    http_version: 
+  recorded_at: Tue, 09 Feb 2016 15:17:18 GMT
+recorded_with: VCR 3.0.1

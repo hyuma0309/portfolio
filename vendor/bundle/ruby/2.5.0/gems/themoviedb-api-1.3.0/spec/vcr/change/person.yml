@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/person/changes?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=600
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 09 Feb 2016 15:16:58 GMT
+      Etag:
+      - W/"ea443206ae4e864b40004eb30b31833a"
+      Server:
+      - openresty
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '600'
+      X-Memc-Key:
+      - f4b79b9ed88a9ba3326b1899a217b7ba
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '36'
+      X-Ratelimit-Reset:
+      - '1455031026'
+      Content-Length:
+      - '434'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA33WTU7DMBAF4Lt43cWM7fHYvQpCKFILQooA0XaFencSC5q2
+        6XvL5Gn8802s+Cd87w+n8XgI26ef8L4LWzXP2WwTht30Pmxfh/GwP2/+wuRR
+        ar2EH6dxvM3a46wPWsCgZi7ZUVjU4zLqXTgPCyvncFnretgkKJwr2ZyFVRYF
+        YdIiMOyVkYUJhdbyQrtiLxnUpSa5oY1E1SbLWq9HtZwjMy/o4+kh/AjmkA6L
+        Wpmax0orWSsdCfQQdUuj2RXCCt1ZJx11MiY3dLp6IWplDxF7FnEqwFriDNZR
+        S3rI5qxMvSL1HjLZimR7yPQq0ushE6Kf3lU3H4RQqCRXtk94bHuI+VJubEGN
+        zslsG7NtzLYx28Zs+VagrWcTwmeC+FS0sK2YED4TwmdC+EzonITPBPFljS3R
+        SmJrwmyV2Sqy7SHjU8anjE8ZnzIERXzi06+cboXxKeOLjC+yOSPjiwvf/V/F
+        4qJ3e59r0/+ILofJRibL7g8WGR67Chq60KXp6DK6REPkKtVX5/Z5E76Gt/2U
+        bsLx8ziML/PjdLuu/8+X+7ZLPf8CRgIrQX8LAAA=
+    http_version: 
+  recorded_at: Tue, 09 Feb 2016 15:16:58 GMT
+recorded_with: VCR 3.0.1

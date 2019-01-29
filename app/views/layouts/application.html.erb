@@ -5,25 +5,35 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+    <header class="clearfix">
+      <div class="wrap">
+        <h1 id="logo" itemprop="headline">
+          <a href="https://as-entertainment.com">As-Entertainment</a>
+        </h1>
+        <% if user_signed_in? %>
+          ログインユーザー：
+          <ul class="list clearfix">
+            <li class="list-item">ログインユーザー：<%= current_user.name %></li>
+            <li class="list-item"><%= link_to "検索画面", root_path %></li>
+            <li class="list-item"><%= link_to 'お気に入り', '/bookmarks' %></li>
+            <li class="list-item"><%= link_to "ログアウト", destroy_user_session_path,method: :delete %></li>
+          </ul>
+        <% else %>
+          <ul class="list clearfix">
+            <li class="list-item"><%= link_to "検索画面", root_path %></li>
+            <li class="list-item"><%= link_to "新規作成", new_user_registration_path %></li>
+            <li class="list-item"><%= link_to "ログイン", new_user_session_path %></li>
+          </ul>
+        </div>
 
-  <% if user_signed_in? %>
-    ログインユーザー： <%= current_user.name %>
-    <%= link_to "検索画面", root_path %>
-    <%= link_to 'お気に入り', '/bookmarks' %>
-    <%= link_to "ログアウト", destroy_user_session_path,method: :delete %>
-  <% else %>
-    <%= link_to "検索画面", root_path %>
-    <%= link_to "新規作成", new_user_registration_path %>
-    <%= link_to "ログイン", new_user_session_path %>
-  <% end %>
+      </header>
+    <% end %>
     <%= yield %>
+
   </body>
 </html>
-
