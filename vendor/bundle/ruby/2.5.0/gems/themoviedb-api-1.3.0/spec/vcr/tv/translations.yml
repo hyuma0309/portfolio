@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/tv/1396/translations?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=28800
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 09 Feb 2016 15:17:21 GMT
+      Etag:
+      - W/"06265c01bbaa48e4cf31af4e21741479"
+      Server:
+      - openresty
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '11637'
+      X-Memc-Expires:
+      - '17163'
+      X-Memc-Key:
+      - d003b698700945107e0962486abaa45c
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '18'
+      X-Ratelimit-Reset:
+      - '1455031046'
+      Content-Length:
+      - '684'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA3WVTU8TQRjHv4rZM4khJCRwEwpUBdMAnowh03Zox93ONPNS
+        IoSkBE4EEz0ogaBRjCkSVIgQbLEXl3OzvdDyBQhq/Q7OwpodOw/poe0+8/s/
+        87zugkOyzmBv30B/jyM5osJDkjAqnMFHCw4RbKa/b2Cm1xl08tzpcSgqYP07
+        yUtICpfoJ5jmPCLyM5FlmDPNI+os9vyPp0WMDzGhHUG4tlCIxgY9IorIP2Ce
+        TU8VEdV/bVoaNBYScDwiJAM9z6KYtbEU5gKiPMPjOMFSlciPTRcBjseJzCsE
+        uw6PR8eEYgWAHiUUjpgaEV8jNvzP0A0/MUK+WP9wsbV3ufvGxu8hnW4ssMUj
+        o1PalfOVdrV90N45X21/tEXucJQmGUtCGhLT/nfu+hVsw9OKu1AAwo3pKY+V
+        MD19RmgYVXfDaCNyLT4b+oqOJLCSIgNkbwzzAlA0rmI21VxuLjWXglrwLaja
+        CpNKgM0zawQ/qkfSryAS9n937TmmGTv4vHGBCZR7elWNLjSpaA5xyDcOxyo6
+        1ThqnOjPcaPeqDZqjT1bZ4xjbKcvnYs1goPmanASfA32m+XrTNwKjoJjnZCa
+        LTekvBuuxVksOckK/jY9XbZ5bYEniRjjeFciT58JBbvwyGLReaMdWttnh60X
+        Z/utHf290dq1VZI4zfGcJUKNxD7AWcw9RLNAVRNKAkUtGnSKeeDu1M+hYSga
+        sacYlyqn/F3AcWSDBjpjbN/TNSxcv27zw/MYuPh8ODnRiYuNzz/Lm5dfXtvw
+        hE6Grryd+6yxixLhS8NmE/DSV8YSCN4HtWZZ9+B6UNcTuXbTRD50OSJgB7lG
+        A/55ufXr6FPn1eHtzrv9zsrb35XnttR9xjGgI0qxjtCLSbjQWprD2auQHi/+
+        BQDtVMufBwAA
+    http_version: 
+  recorded_at: Tue, 09 Feb 2016 15:17:21 GMT
+recorded_with: VCR 3.0.1

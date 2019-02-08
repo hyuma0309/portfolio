@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vod</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
 
-  <% if user_signed_in? %>
-    ログインユーザー： <%= current_user.name %>
-    <%= link_to "検索画面", root_path %>
-    <%= link_to 'お気に入り', '/bookmarks' %>
-    <%= link_to "ログアウト", destroy_user_session_path,method: :delete %>
-  <% else %>
-    <%= link_to "検索画面", root_path %>
-    <%= link_to "新規作成", new_user_registration_path %>
-    <%= link_to "ログイン", new_user_session_path %>
-  <% end %>
-    <%= yield %>
+      <header>
+        <div class="wrap clearfix">
+          <h1 id="logo" itemprop="headline">
+            <a href="https://as-entertainment.com">As-Entertainment</a>
+          </h1>
+          <% if user_signed_in? %>
+            ログインユーザー：
+            <ul class="list clearfix">
+              <li class="list-item">ログインユーザー：<%= current_user.name %></li>
+              <li class="list-item"><%= link_to "検索画面", root_path %></li>
+              <li class="list-item"><%= link_to 'お気に入り', '/bookmarks' %></li>
+              <li class="list-item"><%= link_to "ログアウト", destroy_user_session_path,method: :delete %></li>
+            </ul>
+          <% else %>
+            <ul class="list clearfix">
+              <li class="list-item"><%= link_to "検索画面", root_path %></li>
+              <li class="list-item"><%= link_to "新規作成", new_user_registration_path %></li>
+              <li class="list-item"><%= link_to "ログイン", new_user_session_path %></li>
+            </ul>
+          </div>
+
+        </header>
+      <% end %>
+      <%= yield %>
+    </div>
   </body>
 </html>
-

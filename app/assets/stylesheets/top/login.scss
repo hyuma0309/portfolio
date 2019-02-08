@@ -1,0 +1,45 @@
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+
+label{
+  display: inline;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.form{
+  margin: 50px auto;
+  width:300px;
+}
+
+.form-label{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.textarea{
+  width: 100%;
+  border-bottom: 1px #E9E9F0 solid;
+}
+
+.check_box{
+  display: inline;
+}
+
+
+.btn-login{
+  background: #43425D;
+  color: white;
+  width: 100%;
+  font-size: 20px;
+}

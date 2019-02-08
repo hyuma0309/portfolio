@@ -1,0 +1,42 @@
+header {
+  border-bottom: 1px solid #efefef;
+  padding: 10px;
+}
+
+#logo {
+  float: left;
+
+}
+
+#logo a {
+  text-decoration: none;
+  color: black;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: Montserrat, sans-serif;
+}
+
+.list {
+  float: right;
+
+}
+
+.list-item {
+  list-style: none;
+  float: left;
+  margin-left: 5px;
+}
+
+@media screen and (min-width:531px) {
+  /*　画面サイズが600pxから960pxまではここを読み込む　*/
+
+.list{
+  margin-top: 10px;
+}
+
+  .list-item {
+    list-style: none;
+    float: left;
+    margin-left:5px;
+  }
+}

@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/person/1?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=28800
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 09 Feb 2016 15:17:09 GMT
+      Etag:
+      - W/"54ddfd414d487d6d44530c1c688bdc35"
+      Server:
+      - openresty
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '6656'
+      X-Memc-Expires:
+      - '22144'
+      X-Memc-Key:
+      - 295ceaa7e277f950dfaa70ab1e47bbde
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '25'
+      X-Ratelimit-Reset:
+      - '1455031036'
+      Content-Length:
+      - '790'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA1VTXW8bNxD8K8Q9tYCsWKgdf7wFRtOgaNMHJw3QqBD2jnt3
+        rEnuhR+ShaD/vbOU3KZ+kEne7uzuzOzXjmz1pbsfyWdedfiV3VOUQ9xR7u4/
+        dz+xpInNJ/JFovmlDpTNz2ltuj9XXe9kSrTMx+6+e5OmSr0/mjKzCZKLcWGR
+        VCgWMzofjItR9lQk4dSCZpdxOxoZTzlsXQ0rcy54qjRILC5W8gDedkvNM9sW
+        zXHPXhbedpqvBQI9uTiZwsMcxct0NNnFoZUxTAkAlo7ZAJRMLtUyGqNiPq4f
+        1w9r8yAxO8sJ8GQONeIIOGv6YwPQPljnoeQ4r4y2Txoa6jDjmBBviguMyBBq
+        dAMV7UZz9y47UFeklXVi+JmHWtxegQ6z5Da79RofKNKkI4oCLUmCw2cmFMGY
+        ija6BG7LnJjNyFRqYmNd4qHV43EE51kpzoJuDnRcmw9NkVgDRiZvch0GzlkB
+        t91joQRxUwaR323ubm6+N0qy8nCWiRO9SLTtcg0Bk/Zehqe+5sJphcTD7IZ5
+        ZSznxRVuoZ7wzSyyVA/KSlPZy8H01U4Mb4DghWMTQcVTJqBMLs77lr8k3pM7
+        cdLaVoxFDpyayIh4JzDFQcTCC5OLvN7GbfwwS51mlSezsoRmJLIhKMm5wJ/u
+        Pwc9LyANMkH50wToavSVYRp7liqrEJb3cp6qr/7pTIZLJnGWmsClRrUplAI3
+        xZOAvScoJeMIXFzn48IpLwRLQiOTW/VB6cGwMroCDlxpNFipfRmrMgGH0ml/
+        8A5OxFftmLA3ePi/fpoK0YCkVoeBqrdG2Q5k+UXOkzDfCAiczEE3F2zDv94F
+        hLxIHvlgAkThGLGd606XPpUZ+Nj5zd3V1cXl9cXmCu8WZjy/4zbDfQusfLo5
+        291v8C/YfqfnLoZL/G1uNTFS0LBv9x6viwdTOxl3rR6+/yogFzxemAe4ARRG
+        R7h8fHyj0f8arbu/Xm9e39zdvcar8up5t1BDeHX75dnF25rK2x8v33+hP96/
+        /fRb/f36h5v+3fqvZer+/gdlWStDDgUAAA==
+    http_version: 
+  recorded_at: Tue, 09 Feb 2016 15:17:09 GMT
+recorded_with: VCR 3.0.1
