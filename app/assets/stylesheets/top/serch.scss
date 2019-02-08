@@ -1,28 +1,131 @@
 
-bodY{
-  line-height: 1;
+html {
+  font-size: 62.5%;
 }
 
+
+
+body {
+  margin: 0;
+  font-family: "Helvetica", "Arial", 'Noto Sans JP', YuGothic, "Yu Gothic", "Hiragino Sans", "ヒラギノ角ゴシック", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-display: swap;
+  letter-spacing: .4px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  color: #333333;
+  font-weight: 600;
+}
+
+.main{
+  padding-top: 5rem;
+}
+
+
 .catch{
-  font-size: 50px;
+  font-size: 2.2rem;
   font-weight: bold;
   line-height: normal;
   text-align: center;
+  margin-bottom: 0px;
 }
 .serch{
   text-align: center;
+  margin-top: -10px;
 }
 
 
 .serch-box{
   background: #f5f5f5;
-  width: 500px;
-  height: 50px;
+  width: 95%;
+  max-width: 500px;
+  height: 4rem;
   border-radius: 50px;
   border: none;
+  font-size: 1.6rem;
+  padding-left:16px;
 }
 
-.serch-box::placeholder{
-  font-size: 16px;
-  padding: 0 0 0 24px;
+
+.serch-box:focus{
+  box-shadow:none;
+}
+
+.serch-button{
+  display: none;
+}
+
+.itembox{
+margin: 30px 0 10px;
+display: -webkit-flex;
+display: flex;
+}
+
+.eyecatch{
+  width:130px;
+  float: left;
+  width: 40%;
+}
+
+
+.eyecatch img{
+  width: 100%;
+}
+
+
+.title{
+  display: inline-flex;
+      align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  top:30%;
+  float: left;
+  width: 60%;
+  padding-left: 8px;
+}
+
+
+
+.release{
+  font-family: sans-serif;
+}
+
+.bookmarks{
+  margin: 20px 0;
+  padding: 0 4px;
+  border: solid 1px #707070;
+  display: -webkit-inline-box;
+  border-radius: 8px;
+}
+
+.bookmarks input{
+  padding: 0;
+}
+
+.fa-star{
+  color: blue;
+}
+
+.hulu img,.unext img,.dtv img,.gyao img,.amazon img,.netflix img,{
+width: 40px;
+}
+
+@media screen and (min-width:768px) {
+
+  .eyecatch{
+    width:300px;
+    float: initial;
+    display: inline;
+  }
+
+
+  .eyecatch img{
+    width: 100%;
+  }
+
+  .title{
+    float: initial;
+  }
+
+  .pc-layout{}
+
 }
