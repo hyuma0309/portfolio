@@ -251,11 +251,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   kaminari
   listen (>= 3.0.5, < 3.2)
-<<<<<<< HEAD
-  pg
-=======
   pry-byebug
->>>>>>> homete
   puma (~> 3.11)
   rails (~> 5.2.1)
   sass-rails (~> 5.0)
@@ -270,11 +266,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-<<<<<<< HEAD
    ruby 2.3.7p456
-=======
-   ruby 2.5.1p57
->>>>>>> homete
 
 BUNDLED WITH
    1.17.2

@@ -45,7 +45,6 @@
 
       <% else %>
         <%= form_tag('/bookmarks', :method => :post) do %>
-
         <%= hidden_field_tag 'movie_id', movie.id %>
         <%= submit_tag 'お気に入りに追加' %>
       <% end %>
@@ -54,7 +53,7 @@
 
   <% end %>
 
-  <% if movie.vod_info.vod_services.size > 0 %>
+  <% if !movie.vod_info.nil? and movie.vod_info.vod_services.size > 0 %>
     <% services = "" %>
       <% movie.vod_info.vod_services.each do |service| %>
         <span class="vod-index pc-layout">
@@ -90,7 +89,7 @@
 
                     <% elsif service.name == 'Netflix' %>
                       <span class="netflix">
-                        <a href="https://www.netflix.com/jp/"><img src="assets/betflixapp.png" alt="netflixの画像">
+                        <a href="https://www.netflix.com/jp/"><img src="assets/netflixapp.png" alt="netflixの画像">
                         </a>
                       </span>
 
