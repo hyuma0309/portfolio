@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.4.1'
+ruby '2.3.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', groups: %w(test development), require: false
-gem 'pg', groups: %w(production), require: false
+# gem 'pg', groups: %w(production), require: false
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
@@ -67,4 +67,4 @@ gem "chromedriver-helper"
 gem 'devise'
 gem 'themoviedb-api'
 gem 'kaminari'
-gem 'pry-byebug'
+

@@ -1,0 +1,21 @@
+.clearfix:after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+a:hover{
+  color: initial;
+   background: initial;
+}
+
+.wrap{
+  width: 95%;
+  max-width: 1200px;
+      box-sizing: border-box;
+      margin: 0 auto;
+}
+
+.txtxs{
+  font-size: 1rem;
+}

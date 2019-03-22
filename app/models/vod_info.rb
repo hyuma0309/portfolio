@@ -23,7 +23,7 @@ class VodInfo < ApplicationRecord
       vod_info = find_or_create_by(title: title)
       vod_info.title = title
       vod_info.movie = movie
-      vod_info.save
+      vod_info.save #APIとスクレイピングのタイトルが一致するものを保存
       unless movie_element.find_elements(:class, 'price-comparison__grid__row--stream').empty?
         movie_element.find_element(:class, 'price-comparison__grid__row--stream')
                      .find_elements(:class, 'price-comparison__grid__row__icon').each do |icon_element|
@@ -31,7 +31,7 @@ class VodInfo < ApplicationRecord
           vod_service = VodService.find_or_create_by(name: service_name, vod_info: vod_info)
           vod_service.vod_info = vod_info
           vod_service.name = service_name
-          vod_service.save
+          vod_service.save #vodの名前とAPIとスクレイピングのタイトルが一致するものを保存
         end
       end
       end

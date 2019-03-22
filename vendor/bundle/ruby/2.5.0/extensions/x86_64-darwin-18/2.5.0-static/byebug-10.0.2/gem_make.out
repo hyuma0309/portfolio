@@ -1,0 +1,19 @@
+current directory: /Users/shota/portfolio/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+/Users/shota/.rbenv/versions/2.5.1/bin/ruby -I /Users/shota/.rbenv/versions/2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20181220-97264-1t45uan.rb extconf.rb
+creating Makefile
+
+current directory: /Users/shota/portfolio/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/shota/portfolio/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/shota/portfolio/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20181220-97264-xwpt1/byebug

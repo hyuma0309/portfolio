@@ -1,0 +1,94 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/tv/1396/credits?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=28800
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 09 Feb 2016 15:17:19 GMT
+      Etag:
+      - W/"811621afbd7c33e531ac65f732377c4a"
+      Server:
+      - openresty
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '9423'
+      X-Memc-Expires:
+      - '19377'
+      X-Memc-Key:
+      - ff58313494259ee31c15cd8400e51804
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '25'
+      X-Ratelimit-Reset:
+      - '1455031046'
+      Content-Length:
+      - '1309'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        BRAAAA==
+    http_version: 
+  recorded_at: Tue, 09 Feb 2016 15:17:19 GMT
+recorded_with: VCR 3.0.1

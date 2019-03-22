@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/movie/changes?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=600
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 09 Feb 2016 15:16:56 GMT
+      Etag:
+      - W/"c355a5ccb07b4f50f3a775e23394fc25"
+      Server:
+      - openresty
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '259'
+      X-Memc-Expires:
+      - '341'
+      X-Memc-Key:
+      - 2f7ecce3c7b5eae3002bf7f025b5b504
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '37'
+      X-Ratelimit-Reset:
+      - '1455031026'
+      Content-Length:
+      - '521'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA32WzY4TQQyE32XOObR/2nbvqyCEIm1ASJFAm+xpte+OMwgQ
+        aD6OmZLbVXbZztv2crm9Xu+37enD2/b1eXtabuO0nZ/74/b0+Xy9Xd5PPxH1
+        GUsBM7HMY8xKcgKmarrkGBPxSAdMp1gcY5EpkC4qDSDzKW6AZUkBkyYiC+JU
+        53SomFi50ZstQOoY26sJb6rqgGJWCkE6ahXUUocVxk33BK9Ihsc8xnYFoC7D
+        HNKJTVvUPMvhlM7mIppmFQnSJeYKauxsmtCEVn4MtBmMHBbhECVDay3AcpUC
+        DTGhYbWRy6jKD6NAOhsUFNHajjGVbht0W6euorieDpodXRYBLe2ZE7RCrCwS
+        l9zuxtwh3+5merMkyM7evgRofxKotDoNmgINLaCputb4g91fXv9K959qDmLZ
+        E2DAshemCmAqUgJm73MwaNGaY+tad4BVlk66Lz3EHXeM9XY2Wgxq2fYDLIxW
+        6V5moiJLqAMzjXaDDkK6AUYLSisVrRc5kf8IBZKzCDHxUeBXiV7oQKSvO0dR
+        shwTq++5gvxjY8DGkKl4bfvuV1HcyAH+t+iaEJOHRyCd9nqiMZVYAoVs/zjt
+        wx5EPB9SVEp1HeSfPtIKuufA+7HLhrDHDsUO9D+Xf6V9PG3fz18uDZ62+7f7
+        +frp8fP2UPTrw++/vDJ8vP8A+Zd60wMLAAA=
+    http_version: 
+  recorded_at: Tue, 09 Feb 2016 15:16:56 GMT
+recorded_with: VCR 3.0.1

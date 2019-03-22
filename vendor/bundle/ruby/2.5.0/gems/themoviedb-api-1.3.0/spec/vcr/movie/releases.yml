@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/movie/550/releases?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=28800
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 09 Feb 2016 15:17:06 GMT
+      Etag:
+      - W/"2c9bb32e197bd1697e9993a7b64e7e61"
+      Server:
+      - openresty
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '8189'
+      X-Memc-Expires:
+      - '20611'
+      X-Memc-Key:
+      - ef2be0de1a420527c54de6ff74a48928
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '37'
+      X-Ratelimit-Reset:
+      - '1455031036'
+      Content-Length:
+      - '256'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA6XTwWrDMAwG4FcZui4GyVuCk9vC2lBKL127yxjBpC4YumTY
+        6aGUvPvcwy6uSzV2FeJD/JLOYHdQ5Tlm0A3HfnTWeKg+ztAZN9q97fRohx4q
+        WEMG1g/tExVFS6GwfQuVb2e/tDtBtdcHbzJw5mC0N+1Ojyb0UFmWglDQM0zZ
+        tUkqRl9nXJSCy0Sb+g+oTKNFjM4vgXDR9KQxuWGT8hZJ6kH3g4/lmi3fTGAp
+        roOdL/7NdrFZN/dNiSEBVEKqpPm+CvcWsYvNffb3WmWZZNekHmP2ZctlQwKU
+        ZGNyxv4rEpizyIaxfomIAuVly9Pn9ANLLEgiFwQAAA==
+    http_version: 
+  recorded_at: Tue, 09 Feb 2016 15:17:06 GMT
+recorded_with: VCR 3.0.1
