@@ -253,7 +253,7 @@ DEPENDENCIES
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3 (~> 1.3.6)
+  sqlite3
   themoviedb-api
   turbolinks (~> 5)
   tzinfo-data
