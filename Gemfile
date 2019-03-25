@@ -67,4 +67,4 @@ gem "chromedriver-helper"
 gem 'devise'
 gem 'themoviedb-api'
 gem 'kaminari'
-
+gem 'bootstrap-sass'
